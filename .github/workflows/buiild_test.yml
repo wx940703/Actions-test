@@ -10,4 +10,6 @@ jobs:
     steps:
     - name: test
       run: |
-        uname -a
+        apt update && apt upgrade -y
+        apt install neofetch
+        neofetch

@@ -5,9 +5,9 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-last
+    runs-on: ubuntu-latest
 
     steps:
     - name: test
       run: |
-        unmae -a
+        uname -a

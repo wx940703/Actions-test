@@ -10,9 +10,11 @@ jobs:
     steps:
     - name: test
       run: |
-        sudo -E apt update
-        sudo -E apt install neofetch -y
+        sudo -E apt -qq update
+        sudo -E apt -qq install neofetch -y
         neofetch
         uname -a
         df -h
         cat /etc/os-release 
+        id
+        pwd

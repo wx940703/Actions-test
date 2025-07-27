@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: test
       run: |
-        sudo -E apt-get -qq update
+        apt-get update
         uname -a
         df -h
         cat /etc/os-release 

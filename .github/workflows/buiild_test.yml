@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
     - name: test
@@ -22,9 +22,6 @@ jobs:
         sudo docker image prune --all --force
         sudo -E apt-get update
         echo update
-        sudo -E apt-get install ack
+        sudo -E apt-get install libev-dev libpam0g-dev libtirpc-dev liblzma5 libsnmp-dev
         echo install
-        sudo -E apt-get autoremove --purge
-        echo autoremove
-        sudo -E apt-get clean
-        echo clean
+
